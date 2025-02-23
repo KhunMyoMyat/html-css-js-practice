@@ -24,7 +24,7 @@ body {
   background: var(--bg-color);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.107);
   padding: 1rem 3rem;
-  width: 750px;
+  max-width: 750px;
   margin: 0 auto;
 }
 
@@ -40,12 +40,48 @@ form {
   display: flex;
   gap: 0.5rem;
   padding: 0.5rem;
+  margin-bottom: 3rem;
 }
 
 form .todo-input {
   flex: 1;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid rgba(71, 67, 67, 0.164);
+}
+
+.todo-input:focus {
+  outline: 2px solid var(--primary);
+  border-color: transparent;
 }
 
 form .add-todo-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background: var(--primary);
+  border: none;
+  color: white;
+  border-radius: 0.3rem;
+  cursor: pointer;
 }
 /* form styles end*/
+
+.footer {
+  text-align: center;
+}
+
+@media (max-width: 680px) {
+  body {
+    padding: 1rem;
+  }
+  .container {
+    padding: 1rem;
+  }
+  form {
+    flex-direction: column;
+  }
+  form .add-todo-button {
+    width: 100%;
+  }
+}
