@@ -1,6 +1,51 @@
+/* global start */
 :root {
   --primary: #3b82f6;
   --primary-hover: #2563eb;
   --bg-color: #f8fafc;
   --text-color: #334155;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-color);
+  padding: 3rem;
+  color: var(--text-color);
+}
+/* global end */
+
+/* container styles*/
+.container {
+  background: var(--bg-color);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.107);
+  padding: 1rem 3rem;
+  width: 750px;
+  margin: 0 auto;
+}
+
+/* header styles */
+header {
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* form styles start*/
+form {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+form .todo-input {
+  flex: 1;
+}
+
+form .add-todo-button {
+}
+/* form styles end*/
