@@ -4,6 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Html Css Js Practice</title>
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Todo List</h1>
+        <p>Practice HTML, CSS, and JavaScript</p>
+      </header>
+
+      <form action="">
+        <input
+          type="text"
+          class="todo-input"
+          id="todoInput"
+          placeholder="Add a new task..."
+          required
+        />
+        <button type="submit" class="add-todo-button" id="addTodoButton">
+          Add Task
+        </button>
+      </form>
+
+      <ul class="todo-list-parent" id="todoListParent">
+        <!-- todo list items will be added here dynamically -->
+      </ul>
+
+      <footer class="footer">
+        <p id="list-item-count">0 item in your list</p>
+      </footer>
+    </div>
+
+    <!-- js -->
+    <script src="script.js"></script>
+  </body>
 </html>
